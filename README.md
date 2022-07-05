@@ -1,24 +1,41 @@
-# README
+# Blog App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+> Add Description here.
 
-Things you may want to cover:
+## Getting Started
 
-* Ruby version
+To get a local copy of the project, follow these steps: 
+1. Open the terminal and navigate to the folder where you would like to put these files.
+2. Type the following commands into the terminal: 
+ ```
+ git clone https://github.com/jsug9/blog-app
+ ```
+ ```
+ cd blog-app
+ ```
 
-* System dependencies
 
-* Configuration
+## Author
 
-* Database creation
+👤 **Augusto Galindo**
 
-* Database initialization
+- GitHub: [@jsug9](https://github.com/jsug9)
+- LinkedIn: [Augusto Galindo](https://www.linkedin.com/in/augustogalindo/)
 
-* How to run the test suite
+## 🤝 Contributing
 
-* Services (job queues, cache servers, search engines, etc.)
+Contributions, issues, and feature requests are welcome!
 
-* Deployment instructions
+Feel free to check the [issues page](https://github.com/jsug9/blog-app/issues).
 
-* ...
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Thanks to my peers who are always there to offer support.
+
+## 📝 License
+
+This project is [MIT](./LICENSE) licensed.
