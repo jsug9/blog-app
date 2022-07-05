@@ -1,6 +1,6 @@
 # Blog App
 
-> Add Description here.
+> This Blog app will be a classic example of a fully functional blog website that will show the list of posts and empower readers to interact with them by adding comments and liking posts.
 
 ## Getting Started
 
