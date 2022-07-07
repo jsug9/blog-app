@@ -29,7 +29,7 @@ RSpec.describe Post, type: :model do
       expect(@post).to_not be_valid
     end
   end
-  
+
   describe 'Post Model Methods' do
     before do
       5.times do |n|
