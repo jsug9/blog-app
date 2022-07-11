@@ -6,8 +6,7 @@ Rails.application.routes.draw do
 
   root "users#index"
 
-  get '/users/:author_id/posts' => 'posts#index', as: :user_posts
-  get '/users/:author_id/posts/:id' => 'posts#show', as: :user_post
-  get '/users' => 'users#index', as: :users
-  get '/users/:id' => 'users#show', as: :user
+  resources :users, only: [:index, :show] do
+    resources :posts, only: [:index, :show]
+  end
 end
