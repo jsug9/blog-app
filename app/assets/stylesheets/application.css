@@ -41,6 +41,7 @@ body {
 .user_container {
   display: flex;
   justify-content: space-between;
+  gap: 2%;
 }
 
 .user_photo {
@@ -50,7 +51,7 @@ body {
 .user_data {
   border: 1px solid black;
   display: flex;
-  width: 82%;
+  width: 80%;
   align-items: center;
   justify-content: space-between;
   padding: 1rem;
@@ -95,4 +96,31 @@ body {
 .comments {
   border: 1px solid black;
   padding: 0 1rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin: 1rem auto;
+}
+
+.form_title {
+  text-align: center;
+}
+
+.text_input {
+  width: 15rem;
+  border: 1px solid black;
+  padding: 0.5rem 1rem;
+}
+
+.submit_button {
+  width: 40%;
+  margin: 1rem auto;
+  align-self: center;
+  justify-self: center;
+  border: 1px solid black;
+  background-color: white;
+  padding: 0.5rem 1rem;
 }
