@@ -8,9 +8,7 @@ class LikesController < ApplicationController
         user_id: current_user.id,
         post_id: @post.id
       )
-      if new_like.save
-        redirect_to user_post_path(@user.id, @post)
-      end
+      redirect_to user_post_path(@user.id, @post) if new_like.save
     end
   end
 
