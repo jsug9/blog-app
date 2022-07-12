@@ -13,3 +13,36 @@
  *= require_tree .
  *= require_self
  */
+
+ body {
+  width: 90%;
+  margin: 0 auto;
+ }
+
+ .link_class {
+    margin: 0 1rem;
+    color: black;
+    text-decoration: none;
+ }
+
+ .user_container {
+   display: flex;
+   justify-content: space-between;
+ }
+
+ .user_photo {
+  border: 1px solid black;
+ }
+
+ .user_data {
+  border: 1px solid black;
+  display: flex;
+  width: 82%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+ }
+
+.post_number {
+  align-self: flex-end;
+}
