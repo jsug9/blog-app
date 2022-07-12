@@ -1,0 +1,8 @@
+<h2>Add a Comment</h2>
+<%= form_with model: @comment, class: "form" do |form| %>
+  <%= form.text_area :text,
+  placeholder: "Write a comment...", 
+  required: true,
+  class: "input-comment" %>
+  <%= form.submit "Comment", class: "submit" %>
+<% end %>
