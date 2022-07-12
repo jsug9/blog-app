@@ -19,6 +19,19 @@ body {
   margin: 0 auto;
 }
 
+.link_list {
+  padding: 0;
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.link_list_li {
+  border: 1px solid black;
+  padding: 0.5rem 1rem;
+  list-style: none;
+}
+
 .link_class {
   margin: 0 1rem;
   color: black;
