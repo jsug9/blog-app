@@ -62,7 +62,7 @@ RSpec.configure do |config|
   # arbitrary gems may also be filtered via:
   # config.filter_gems_from_backtrace("gem name")
 
-  RSpec.describe "Signing in", js: true do
+  RSpec.describe 'Signing in', js: true do
     # tests that actually execute JavaScript
   end
 end
