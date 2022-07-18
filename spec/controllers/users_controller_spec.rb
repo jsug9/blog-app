@@ -6,7 +6,7 @@ RSpec.describe 'Users', type: :request do
   end
 
   describe 'GET /index' do
-    before { get '/users' }
+    before { get users_path }
     it 'should return 200 success' do
       expect(response).to have_http_status(200)
     end
