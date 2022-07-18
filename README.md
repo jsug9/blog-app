@@ -23,12 +23,27 @@ Run rails 'db:migrate'
 Run rails 'db:seed' if there is data in the seed
 Run 'rails s' to start the server locally
 
+To run the tests, run the following commands in your terminal:
+
+```
+ bundle install
+```
+```
+rspec
+```
+
 ## Author
 
 👤 **Augusto Galindo**
 
 - GitHub: [@jsug9](https://github.com/jsug9)
 - LinkedIn: [Augusto Galindo](https://www.linkedin.com/in/augustogalindo/)
+
+## Collaborators
+
+👤 **Emily Robertson**
+
+- GitHub: [@jsug9](https://github.com/emyrue)
 
 ## 🤝 Contributing
 
