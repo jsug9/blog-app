@@ -49,5 +49,6 @@ RSpec.describe 'User Show Page', type: :feature do
   it 'see all posts links to the post index page' do
     first(:link, 'See all posts').click
     expect(page).to have_current_path user_posts_path(@augusto)
+    expect(page).to have_content('Post 5')
   end
 end
