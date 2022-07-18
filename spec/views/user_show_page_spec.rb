@@ -36,7 +36,7 @@ RSpec.describe 'User Show Page', type: :feature do
     expect(page).to have_content('Post 3')
   end
 
-  it 'renders the posts show page when a post is clicked' do
+  it 'redirects to the posts show page when a post is clicked' do
     click_on 'Post 5'
     expect(page).to have_current_path user_post_path(@augusto, @augusto.posts.last)
     expect(page).to have_content('Hello World, I am Augusto')
@@ -44,5 +44,11 @@ RSpec.describe 'User Show Page', type: :feature do
 
   it 'has a see all posts link' do
     expect(page).to have_link('See all posts')
+  end
+
+  it 'see all posts links to the post index page' do
+    click_link 'See all posts'
+    expect(page).to have_current_path user_posts_path(@augusto)
+    expect(page).to have_content('Post 5')
   end
 end
