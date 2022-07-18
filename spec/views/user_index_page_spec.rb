@@ -21,7 +21,7 @@ RSpec.describe 'User Index Page', type: :feature do
     expect(page).to have_content('Number of posts: 0')
   end
 
-  it 'renders the user\'s show page when clicked' do
+  it 'redirects to the user\'s show page when clicked' do
     click_on 'Augusto'
     expect(page).to have_current_path user_path(@augusto)
     expect(page).to have_content('Hello World, I am Augusto')

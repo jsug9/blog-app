@@ -26,7 +26,7 @@ RSpec.describe 'Post Index Page', type: :feature do
     expect(page).to have_content('Number of posts: 5')
   end
 
-  it 'shows post\s title' do
+  it 'shows posts\' title' do
     expect(page).to have_content('Post 5')
     expect(page).to have_content('Post 4')
     expect(page).to have_content('Post 3')
