@@ -20,5 +20,6 @@ class User < ApplicationRecord
 
   def default_values
     self.post_counter ||= 0
+    self.photo ||= 'https://i.stack.imgur.com/YQu5k.png'
   end
 end
