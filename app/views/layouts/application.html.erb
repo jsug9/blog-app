@@ -10,8 +10,18 @@
     <%= javascript_importmap_tags %>
   </head>
 
+  <%= render 'nav/nav' %>
+
   <body>
-    <%= render 'nav/nav' %>
+    <%
+=begin%>
+ <div class="container">
+      <% if notice != nil %>
+        <p class="notice alert alert-info"><%= notice %></p>
+      <% end %>
+    </div> 
+<%
+=end%>
     <%= yield %>
   </body>
 </html>

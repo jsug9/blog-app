@@ -51,6 +51,9 @@ gem 'bullet', group: 'development'
 # Use Devise for authentication and authorization
 gem 'devise'
 
+# Use letter_opener to send emails in development
+gem "letter_opener", group: :development
+
 # Use Sass to process CSS
 # gem "sassc-rails"
 

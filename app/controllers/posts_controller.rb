@@ -1,4 +1,6 @@
 class PostsController < ApplicationController
+  before_action :authenticate_user!, only: %i[new create delete]
+
   def index
     @user = User.find(params[:user_id])
     @posts = @user.posts.includes(:comments)
@@ -19,8 +21,10 @@ class PostsController < ApplicationController
     @post = Post.new(posts_params)
     @post.author = current_user
     if @post.save
+      flash[:notice] = 'Post published succesfully'
       redirect_to user_post_path(current_user, @post)
     else
+      flash[:error] = @post.errors.full_messages[0]
       render :new
     end
   end
