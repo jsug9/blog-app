@@ -54,7 +54,7 @@ gem 'devise'
 # Use letter_opener to send emails in development
 gem 'letter_opener', group: :development
 
-# Use CanCanCan for authorization
+# Use CanCan for authorization
 gem 'cancancan'
 
 # Use Sass to process CSS
