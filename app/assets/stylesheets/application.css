@@ -26,14 +26,19 @@ body {
   justify-content: space-between;
 }
 
-.left-links {
+.links-group {
   display: flex;
   gap: 1rem;
+  align-items: center;
 }
 
 .link_list_li {
   border: 1px solid black;
   padding: 0.5rem 1rem;
+  list-style: none;
+}
+
+.no_list_style {
   list-style: none;
 }
 
@@ -149,24 +154,4 @@ body {
 
 .like_button:active {
   background-color: #d2d0d0;
-}
-
-.form-section {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-
-.checkbox {
-  display: flex;
-  justify-content: center;
-}
-
-.log-in-heading {
-  display: flex;
-  justify-content: center;
-}
-
-.log-in-button {
-  width: 274px;
 }
