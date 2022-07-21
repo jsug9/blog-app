@@ -5,7 +5,7 @@ class Api::CommentsController < ApplicationController
   end
 
   def create
-    @user = User.find(params[:user_id])
+    @user = current_user
     @comment = @user.comments.new(comments_params)
     @comment.author_id = @user.id
     @comment.post_id = params[:post_id]
