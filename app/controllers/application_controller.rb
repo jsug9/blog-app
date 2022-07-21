@@ -14,4 +14,14 @@ class ApplicationController < ActionController::Base
       u.permit(:name, :photo, :bio, :email, :password, :current_password)
     end
   end
+
+  def json_request
+    request.format.json?
+  end
+
+  private
+
+  def authorize_request
+    @current_user = (AuthorizeApiRequest.new(request.headers).call)[:user]
+  end
 end

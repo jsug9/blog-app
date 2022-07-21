@@ -26,7 +26,6 @@ class Api::UsersController < ApplicationController
        :name,
        :email,
        :bio,
-       :photo,
        :password,
        :password_confirmation
      )
