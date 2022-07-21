@@ -21,7 +21,7 @@ class User < ApplicationRecord
   end
 
   def as_json(_options = {})
-    super(only: %i[id name bio posts_counter])
+    super(only: %i[id name bio post_counter])
   end
 
   private
