@@ -1,8 +1,8 @@
 class ApplicationController < ActionController::Base
   include Response
   include ExceptionHandler
-  protect_from_forgery with: :exception, unless: :json_request
 
+  protect_from_forgery with: :exception, unless: :json_request
   before_action :update_allowed_parameters, if: :devise_controller?
   before_action :authorize_request, if: :json_request
 

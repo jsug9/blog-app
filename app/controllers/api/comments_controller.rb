@@ -9,11 +9,8 @@ class Api::CommentsController < ApplicationController
     @comment = @user.comments.new(comments_params)
     @comment.author_id = @user.id
     @comment.post_id = params[:post_id]
-    response = if @comment.save
-                 { comment: @comment }
-               else
-                 { message: "Comment didn't save" }
-               end
+    response = { comment: @comment } if @comment.save
+
     json_response(response)
   end
 

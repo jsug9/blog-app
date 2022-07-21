@@ -15,7 +15,7 @@ class AuthenticateUser
 
   # verify user credentials
   def user
-    user = User.find_by(email: email)
+    user = User.find_by(email:)
     #   return user if user && user.authenticate(password)
     return user if user&.valid_password?(password)
 
