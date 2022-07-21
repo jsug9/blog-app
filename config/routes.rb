@@ -17,4 +17,13 @@ Rails.application.routes.draw do
     end
   end
   resources :posts, only: [:new, :create]
+  
+  # API routes
+  namespace :api, defaults: { format: :json } do
+    resources :users, only: [:index, :show] do
+      resources :posts, only: [:index, :show] do
+        resources :comments, only: [:create]
+      end
+    end
+  end
 end
