@@ -20,9 +20,9 @@ Rails.application.routes.draw do
   
   # API routes
   namespace :api, defaults: { format: :json } do
-    resources :users, only: [:index, :show] do
-      resources :posts, only: [:index, :show] do
-        resources :comments, only: [:create]
+    resources :users do
+      resources :posts do
+        resources :comments
       end
     end
   end
