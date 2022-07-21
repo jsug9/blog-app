@@ -57,6 +57,9 @@ gem 'letter_opener', group: :development
 # Use CanCan for authorization
 gem 'cancancan'
 
+# Use JWT for authentication
+gem 'jwt'
+
 # Use Sass to process CSS
 # gem "sassc-rails"
 

@@ -20,6 +20,10 @@ class User < ApplicationRecord
     :role == 'admin'
   end
 
+  def as_json(_options = {})
+    super(only: %i[id name bio post_counter])
+  end
+
   private
 
   def default_values
