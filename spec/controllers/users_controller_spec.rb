@@ -10,8 +10,8 @@ RSpec.describe 'Users', type: :request do
       role: 'admin',
       bio: 'Hello World, I am Augusto'
     )
-    @user.skip_confirmation!
-    @user.save!
+    @augusto.skip_confirmation!
+    @augusto.save!
   end
 
   describe 'GET /index' do
