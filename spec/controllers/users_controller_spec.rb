@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe 'Users', type: :request do
   before :each do
-    @augusto = User.new(
+    @user = User.new(
       email: 'augusto@icloud.com',
       password: 'password',
       password_confirmation: 'password',
@@ -10,12 +10,12 @@ RSpec.describe 'Users', type: :request do
       role: 'admin',
       bio: 'Hello World, I am Augusto'
     )
-    @augusto.skip_confirmation!
-    @augusto.save!
+    @user.skip_confirmation!
+    @user.save!
   end
 
   describe 'GET /index' do
-    before { get '/users' }
+    before { get users_path }
     it 'should return 200 success' do
       expect(response).to have_http_status(200)
     end
@@ -30,7 +30,7 @@ RSpec.describe 'Users', type: :request do
   end
 
   describe 'GET /show' do
-    before(:each) { get user_path(@user) }
+    before { get user_path(@user) }
 
     it 'should return 200 success' do
       expect(response).to have_http_status(200)
