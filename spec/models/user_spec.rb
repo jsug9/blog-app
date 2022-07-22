@@ -2,8 +2,15 @@ require 'rails_helper'
 
 RSpec.describe User, type: :model do
   before :each do
-    @user = User.new(name: 'Aaron', photo: 'photo', bio: 'Hey folks!', post_counter: 0)
-    @user.save
+    @user = User.new(
+      email: 'augusto@icloud.com',
+      password: 'password',
+      password_confirmation: 'password',
+      name: 'Augusto',
+      bio: 'Hello World, I am Augusto'
+    )
+    @user.skip_confirmation!
+    @user.save!
   end
 
   describe 'User Model Properties' do
