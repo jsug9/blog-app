@@ -2,7 +2,15 @@ require 'rails_helper'
 
 RSpec.describe 'Post Show Page', type: :feature do
   before(:each) do
-    @augusto = User.create(name: 'Augusto', photo: 'Photo', bio: 'Hello World, I am Augusto')
+    @augusto = User.new(
+      email: 'augusto@icloud.com',
+      password: 'password',
+      password_confirmation: 'password',
+      name: 'Augusto',
+      bio: 'Hello World, I am Augusto'
+    )
+    @augusto.skip_confirmation!
+    @augusto.save!
     @post = Post.create(
       title: 'Post 1',
       text: 'Hello World, I am Augusto',
