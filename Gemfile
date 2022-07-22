@@ -65,6 +65,9 @@ gem 'rswag'
 gem 'rswag-api'
 gem 'rswag-ui'
 
+# Use Faker for test data
+gem 'faker', group: %i[development test]
+
 # Use Sass to process CSS
 # gem "sassc-rails"
 
@@ -95,4 +98,5 @@ group :test do
   gem 'capybara'
   gem 'selenium-webdriver'
   gem 'webdrivers'
+  gem 'database_cleaner'
 end
