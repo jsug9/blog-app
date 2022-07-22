@@ -60,6 +60,11 @@ gem 'cancancan'
 # Use JWT for authentication
 gem 'jwt'
 
+# Use Rswag for API documentation
+gem 'rswag'
+gem 'rswag-api'
+gem 'rswag-ui'
+
 # Use Sass to process CSS
 # gem "sassc-rails"
 
@@ -71,6 +76,7 @@ group :development, :test do
   gem 'debug', platforms: %i[mri mingw x64_mingw]
   gem 'rails-controller-testing'
   gem 'rspec-rails', '~> 6.0.0.rc1'
+  gem 'rswag-specs'
 end
 
 group :development do
