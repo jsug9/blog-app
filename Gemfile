@@ -99,4 +99,6 @@ group :test do
   gem 'selenium-webdriver'
   gem 'webdrivers'
   gem 'database_cleaner'
+  gem 'shoulda-matchers'
+  gem 'factory_bot_rails'
 end
