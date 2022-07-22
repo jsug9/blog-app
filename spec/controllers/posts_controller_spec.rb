@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe 'Posts', type: :request do
   before :each do
-    @augusto = User.new(
+    @user = User.new(
       email: 'augusto@icloud.com',
       password: 'password',
       password_confirmation: 'password',
