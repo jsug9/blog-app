@@ -2,8 +2,15 @@ require 'rails_helper'
 
 RSpec.describe Post, type: :model do
   before :each do
-    @user = User.new(name: 'Aaron', photo: 'photo', bio: 'Hey folks!', post_counter: 0)
-    @user.save
+    @user = User.new(
+      email: 'augusto@icloud.com',
+      password: 'password',
+      password_confirmation: 'password',
+      name: 'Augusto',
+      bio: 'Hello World, I am Augusto'
+    )
+    @user.skip_confirmation!
+    @user.save!
     @post = Post.new(author: @user, title: 'Post 1', text: 'text 1', comments_counter: 0, likes_counter: 0)
     @post.save
   end
