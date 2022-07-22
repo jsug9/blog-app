@@ -2,11 +2,20 @@ require 'rails_helper'
 
 RSpec.describe 'Users', type: :request do
   before :each do
-    @user = User.create(name: 'Augusto', photo: 'Photo', bio: 'Hello World')
+    @augusto = User.new(
+      email: 'augusto@icloud.com',
+      password: 'password',
+      password_confirmation: 'password',
+      name: 'Augusto',
+      role: 'admin',
+      bio: 'Hello World, I am Augusto'
+    )
+    @user.skip_confirmation!
+    @user.save!
   end
 
   describe 'GET /index' do
-    before { get users_path }
+    before { get '/users' }
     it 'should return 200 success' do
       expect(response).to have_http_status(200)
     end
